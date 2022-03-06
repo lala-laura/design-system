@@ -1,0 +1,97 @@
+body {
+  background-image: linear-gradient(#03305a, #035a5a, #033a5a, #21035a);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #03305a;
+  color: #eef8ff;
+  font-family: 'Fira Sans', sans-serif, Lato;
+  font-weight: 300;
+  margin: 24px;
+  border: 2px solid #25538f;
+  box-shadow: #08000c 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+    #006492 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+    rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Raleway', sans-serif, Arial;
+  font-weight: 300;
+}
+h1 {
+  font-size: 40px;
+  color: #fff;
+  text-decoration: underline solid #025b5e 1px;
+}
+h2 {
+  font-size: 32px;
+  text-decoration: underline solid #025b5e 1px;
+  color: #fff;
+}
+h3 {
+  font-size: 24px;
+  color: #bad9f2;
+  margin-top: 0px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 130%;
+}
+
+.title {
+  text-align: center;
+}
+
+.top-h1 {
+  margin-bottom: 5px;
+}
+.top-h2 {
+  margin: 5px 0px;
+}
+
+a {
+  color: #78d1ec;
+  text-decoration: 1px underline;
+}
+
+/* ---- FOOTER ---- */
+footer {
+  font-family: Laila;
+  font-size: 13px;
+  padding: 10px;
+  text-align: right;
+  color: #a8fcff;
+}
+
+/* -------------HOME @media------------- */
+/* ---------min-width 768--------- */
+@media (min-width: 768px) {
+  body {
+    margin: 50px;
+  }
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    color: #aeefff;
+    font-weight: bolder;
+  }
+}
+/* ---------min-width 1040--------- */
+@media (min-width: 1040px) {
+  body {
+    /*  margin: 60px; */
+  }
+}
+
+/* ---------max 412/min 320--------- */
+@media (max-width: 412px) and (min-width: 320px) {
+  body {
+    margin: 14px;
+  }
+}
