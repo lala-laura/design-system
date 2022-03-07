@@ -1,46 +1,38 @@
 body {
-  background-image: linear-gradient(#03305a, #035a5a, #033a5a, #21035a);
+  background: linear-gradient(to bottom, #685f74 40%, #7e5f8d 90%, #914a75);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: #03305a;
-  color: #eef8ff;
+  color: #ebebff;
   font-family: 'Fira Sans', sans-serif, Lato;
   font-weight: 300;
   margin: 24px;
-  border: 2px solid #25538f;
-  box-shadow: #08000c 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
-    #006492 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+  border: 2px solid #4a4050;
+  box-shadow: #4a4050 0px 2px 4px, #4a4050 0px 7px 13px -3px,
+    #000000 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
     rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Raleway', sans-serif, Arial;
-  font-weight: 300;
-}
 h1 {
-  font-size: 40px;
-  color: #fff;
-  text-decoration: underline solid #025b5e 1px;
+  font-family: 'Raleway', sans-serif, Arial;
+  font-size: 38px;
+  font-weight: 500;
 }
 h2 {
-  font-size: 32px;
-  text-decoration: underline solid #025b5e 1px;
-  color: #fff;
+  font-family: 'Laila', sans-serif, Arial;
+  font-size: 30px;
 }
 h3 {
+  font-family: 'Laila', sans-serif, Arial;
   font-size: 24px;
-  color: #bad9f2;
+  color: #ebebff;
   margin-top: 0px;
 }
 
 p {
   font-size: 18px;
   line-height: 130%;
+  font-weight: 300;
 }
 
 .title {
@@ -52,11 +44,103 @@ p {
 }
 .top-h2 {
   margin: 5px 0px;
+  text-decoration: 1px overline solid #ebebff;
+}
+
+div p {
+  margin-bottom: 14px;
 }
 
 a {
-  color: #78d1ec;
+  color: #f3e0ec;
   text-decoration: 1px underline;
+}
+a:hover {
+  color: #742d5a;
+}
+.box {
+  border: 2px solid #4a4050;
+  box-shadow: #4a4050 0px 2px 4px, #4a4050 0px 7px 13px -3px,
+    #000000 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+    rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  margin: 20px;
+  padding: 10px;
+}
+
+/* COLORS */
+.color-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: auto;
+}
+
+.color-box {
+  border: 1px solid #000;
+  width: 150px;
+  height: 100px;
+  margin: 5px;
+  color: #000000;
+}
+
+.color-box p {
+  text-align: center;
+  font-weight: bolder;
+}
+
+.lavender-web {
+  background-color: #ebebff;
+}
+.sugar-plum {
+  background-color: #914a75;
+}
+.french-lilac {
+  background-color: #7e5f8d;
+}
+.old-lavender {
+  background-color: #685f74;
+}
+
+/* FONTS */
+.font-name {
+  font-size: 24px;
+  font-weight: bolder;
+  text-decoration: 1.5px underline;
+}
+.fira-sans {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.raleway {
+  font-family: 'Raleway', sans-serif;
+}
+
+.laila {
+  font-family: 'Laila', Airal;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+cite {
+  font-size: 15px;
+  text-align: right;
+  display: block;
+  padding-top: 15px;
+}
+
+/* TEXT STYLES */
+
+li {
+  list-style: none;
 }
 
 /* ---- FOOTER ---- */
@@ -65,10 +149,9 @@ footer {
   font-size: 13px;
   padding: 10px;
   text-align: right;
-  color: #a8fcff;
+  color: #f3e0ec;
 }
 
-/* -------------HOME @media------------- */
 /* ---------min-width 768--------- */
 @media (min-width: 768px) {
   body {
@@ -89,9 +172,29 @@ footer {
   }
 }
 
-/* ---------max 412/min 320--------- */
-@media (max-width: 412px) and (min-width: 320px) {
+/* ---------max 434/min 320--------- */
+@media (max-width: 434px) and (min-width: 320px) {
   body {
     margin: 14px;
+  }
+  .color-box {
+    width: 90%;
+  }
+
+  .box {
+    padding: 10px;
+  }
+
+  .color-box p {
+    text-align: center;
+    font-weight: bolder;
+  }
+  p {
+    font-size: 16px;
+    line-height: 100%;
+  }
+
+  .color-name {
+    margin: 10px;
   }
 }
