@@ -1,5 +1,10 @@
 body {
-  background: linear-gradient(to bottom, #685f74 40%, #7e5f8d 90%, #914a75);
+  background-image: linear-gradient(
+    to bottom,
+    #685f74 40%,
+    #7e5f8d 70%,
+    #914a75
+  );
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: #685f74;
